@@ -120,30 +120,7 @@ warp_90x <- function(x) { 90 * x }
 warp_90x(5)
 warp_90x(vector123)
 
-##
-## What are the values after each statement in the following?
-##
-## mass <- 47.5            # mass?
-## age  <- 122             # age?
-## mass <- mass * 2.0      # mass?
-## age  <- age - 20        # age?
-## mass_index <- mass/age  # mass_index?
-### Vectors and data types
-## ## We’ve seen that atomic vectors can be of type character, numeric, integer, and
-## ## logical. But what happens if we try to mix these types in a single
-## ## vector?
-## 
-## ## What will happen in each of these examples? (hint: use `class()` to
-## ## check the data type of your object)
-## num_char <- c(1, 2, 3, "a")
-## 
-## num_logical <- c(1, 2, 3, TRUE)
-## 
-## char_logical <- c("a", "b", "c", TRUE)
-## 
-## tricky <- c(1, 2, 3, "4")
-## 
-## ## Why do you think it happens?
+
 ## 
 ## ## You've probably noticed that objects of different types get
 ## ## converted into a single, shared type within a vector. In R, we call
