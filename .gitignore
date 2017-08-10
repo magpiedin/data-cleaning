@@ -3,5 +3,6 @@
 .RData
 .Ruserdata
 
-/data01
+#/data01
+/data01/BID*
 /presentation
