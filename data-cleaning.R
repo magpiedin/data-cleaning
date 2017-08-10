@@ -11,17 +11,43 @@ setwd("D:/data-cleaning/data01")
 
 # 1 - Melt/Gather Loans Objects ####
 
-# Import Loan data
+# 1a - Import the Loan data
 messyLoans <- read.csv("01loans.csv", stringsAsFactors = F)
 
-# "Gather" (reduce columns/add rows) the data 
-tidyLoans <- gather(messyLoans, key = "Loan", value = "Objects", 2:6, na.rm=T)
 
-# Drop rows with no objects
+# 1b - Review the Loan data
+# In the Environment pane (top right), click "messyLoans"
+
+# Or, to peek at the first 4 rows in the console:
+head(messyLoans)
+
+# To review a specific row:
+messyLoans[3,]
+# ...or column:
+messyLoans[,3]
+
+
+# 1c - "Gather" (reduce columns/add rows) the data 
+tidyLoans <- gather(messyLoans,
+                    key = "ObjKey",
+                    value = "Objects",
+                    2:6)
+
+
+# 1d - Drop columns you don't want/need
+tidyLoans <- tidyLoans[,-2]  # drop column 2
+
+
+# 1e - Drop rows with no objects
 tidyLoans <- tidyLoans[nchar(tidyLoans$Objects)>0,]
 
-# Sort by Loan #
+
+# 1f - Sort by Loan number
 tidyLoans <- tidyLoans[order(tidyLoans$Loan),]
+
+
+# 1g - Export fixed Loan data
+write.csv(tidyLoans, file="tidyLoans.csv", row.names = F)
 
 
 # # reshape2 is an alternative to tidyr:
@@ -51,7 +77,7 @@ spread(messyLoans, Loan, Obj)
 
 # Fortunately, you can re-import the CSV with an argument specifying "utf8" (or "latin1"):
 
-messy <- read.csv("data01input/BID-data.csv",
-                  fileEncoding = "utf8")  # alternatively, "latin1"
+messyBID <- read.csv("data01input/BID-data.csv",
+                     fileEncoding = "utf8")  # alternatively, "latin1"
 
 
