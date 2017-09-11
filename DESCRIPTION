@@ -1,0 +1,8 @@
+Package: fmdatacleanup
+Title: Workshop Scripts For Cleaning Messy Data
+Version: 0.1
+
+Description: Scripts for cleaning messy data, from the Field Museum 2017 Data Cleaning Workshop.
+Depends: R (>= 3.1.0)
+License: MIT
+LazyData: TRUE
