@@ -8,7 +8,7 @@ data cleaning workshop
 * Help/Resources/links
 
 ## Basic concepts (+ examples)
-* R syntax
+- R syntax
 ..* Objects
 ..* Functions
 ..* Arguments
