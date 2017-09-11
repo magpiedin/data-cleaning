@@ -9,7 +9,7 @@ library("tidyr")
 # Input data-files will go here:
 setwd("C:/Users/kwebbink/Desktop/data-cleaning")
 
-# I: Import & Setup data  ####
+#  I: Import & Setup data  ####
 # 1 - Import workshop data
 raw_data <- read.csv("data01raw/WorkshopDataset.csv")   #, stringsAsFactors = F)
 
@@ -33,7 +33,7 @@ gather_id2 <- gather_id[order(gather_id$ADP.number, gather_id$IDorder),]
 gather_id3 <- gather_id2[nchar(gather_id2$Identification) > 0, -2]
 
 
-# II: Re-spread the gathered dataframe  ####
+#  II: Re-spread the gathered dataframe  ####
 # spread-1: Set the ADP.number field to type "Character"
 gather_id3$ADP.number <- as.character(gather_id3$ADP.number)
 
@@ -48,7 +48,7 @@ spread_id <- spread(gather_id3,
                     sep = "_")
 
 
-# III: Export data ####
+#  III: Export data ####
 # export-1.1: Create directory for output
 dir.create("data02exports")
 
