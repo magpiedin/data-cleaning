@@ -7,7 +7,7 @@
 library("tidyr")
 
 # Input data-files will go here:
-setwd("C:/Users/kwebbink/Desktop/data-cleaning")
+setwd("D:/data-cleaning")
 
 #  I: Import & Setup data  ####
 # 1 - Import workshop data
