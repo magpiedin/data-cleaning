@@ -9,9 +9,9 @@ data cleaning workshop
 
 ## Basic concepts (+ examples)
 - R syntax
-..* Objects
-..* Functions
-..* Arguments
+..1. Objects
+..2. Functions
+..3. Arguments
 
 ## Getting data in and out of R 
 * read.csv()
