@@ -3,8 +3,12 @@
 .RData
 .Ruserdata
 
-#/data01
-/data01raw/BID*
+/old
+
+/data01raw/old
 /data01raw/Workshop*
+
 /presentation
+
 /data02output/EMu*
+
