@@ -12,7 +12,7 @@
 
 /presentation
 
-/data02exports/gather*
+/data02exports/gatherID3.csv
 
-/data02output/EMu*
+/data02output
 
