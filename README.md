@@ -8,10 +8,10 @@ data cleaning workshop
 * Help/Resources/links
 
 ## Basic concepts (+ examples)
-* R syntax
-..* Objects
-..* Functions
-..* Arguments
+- R syntax
+- Objects
+- Functions
+- Arguments
 
 ## Getting data in and out of R 
 * read.csv()
