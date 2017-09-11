@@ -4,5 +4,6 @@
 .Ruserdata
 
 #/data01
-/data01/BID*
+/data01raw/BID*
+/data01raw/Workshop*
 /presentation
