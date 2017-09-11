@@ -7,12 +7,18 @@ data cleaning workshop
 * Versions + updating
 * Help/Resources/links
 
-## Getting data in and out of R 
-* read.csv()
-
 ## Basic concepts (+ examples)
 * R syntax
-* Subsetting (similar to querying) by index or logic
-* Functions - gsub() & regular expressions
-* Split/Concatenate - strsplit() & paste()
-* Joins - merge()
+..* Objects
+..* Functions
+..* Arguments
+
+## Getting data in and out of R 
+* read.csv()
+* write.csv()
+
+## Reshaping data
+* subsetting with **[ ]** and **$**
+* tidyr::gather()
+* tidyr::spread()
+
